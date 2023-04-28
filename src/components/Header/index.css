@@ -1,0 +1,87 @@
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  width: 100%;
+}
+.nav-content-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1100px;
+}
+.header-logo {
+  width: 90px;
+}
+.logout-mobile-btn {
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.logout-icon {
+  width: 30px;
+}
+.nav-menu {
+  /* display: none; */
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  display: none;
+}
+.nav-link {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.logout-desktop-btn {
+  /* display: none; */
+  background-color: #0967d2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 500;
+  display: none;
+}
+.nav-content-2 {
+  list-style-type: none;
+  padding: 0px;
+  background-color: #e6f6ff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 4px;
+  padding: 10px 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-menu {
+    display: flex;
+  }
+  .logout-mobile-btn {
+    display: none;
+  }
+  .nav-content-2 {
+    display: none;
+  }
+  .logout-desktop-btn {
+    display: flex;
+  }
+  .nav-content-1 {
+    width: 100%;
+  }
+  .header-logo {
+    width: 130px;
+  }
+}
